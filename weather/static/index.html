@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="http://cdn.dhtmlx.com/edge/dhtmlx.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=[GOOGLEMAPS_KEY_HERE]&callback=onMapReady" async defer></script>
+	<script src="index.js"></script>
+
+	<title>Weather Application Demo </title>
+
+	<meta name="description" content="Demo application">
+	<meta name="author" content="">
+
+	<link href="http://cdn.dhtmlx.com/edge/dhtmlx.css" rel="stylesheet"> 
+	<link href="css/grid-layout.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="img/favicon.ico" rel="shortcut icon">
+
+	</head>
+	<body>
+		<div class="grid-container">
+			<div component="Title">
+				<center>
+					<h1>Weather Forecast Application</h1>
+					<h3></h3>
+				</center>
+			</div>
+			<div component="Input">
+				<center>
+					<div id="loadCountriesDiv"><img src="img/loading.gif"/>Downloading country list..</div>
+					<div id="loadCitiesDiv"><img src="img/loading.gif"/>Downloading city list..</div>
+					
+					<h4>Select country:</h4>
+					<div class="combo" id="comboCountry"></div>
+					<br>
+					<h4>Select city:</h4>
+					<div class="combo" id="comboCity"></div>
+					<span id="radio">
+						<input type="radio" name="unitType" value="metric" checked="checked" /> Metric
+						<input type="radio" name="unitType" value="imperial" /> Imperial
+					</span>
+				</center>
+			</div>
+			<div id="map" component="Map">
+			</div>
+			<div id="respContainer" component="Response">
+			</div>
+		</div>
+	</body>
+</html>
