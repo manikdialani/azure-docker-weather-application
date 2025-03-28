@@ -11,9 +11,11 @@ This project is a weather application that uses Azure Functions service that pro
 - Lightweight and scalable
 
 ### Technologies Used
+- Docker
 - Azure Functions
 - .NET Core
 - Open Weather API
+
 
 
 
