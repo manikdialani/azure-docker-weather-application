@@ -12,7 +12,7 @@ namespace My.Function
 {
     public class WeatherFunction
     {
-        private const string WEATHER_API_KEY = "[OPENWEATHERMAP_API_HERE]";
+        private const string WEATHER_API_KEY = "62cd19d219a7cc6eaf9b5338b1d9d811";
         private static readonly string[] VALID_UNITS = { "metric", "imperial" };
         private readonly ILogger<WeatherFunction> _logger;
         private readonly HttpClient _httpClient;
