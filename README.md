@@ -17,6 +17,8 @@ This project is a weather application that uses Azure Functions service that pro
 - Open Weather API
 
 #### Source
+https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp
+
 https://github.com/Renkon/azure-functions-on-docker
 
 
